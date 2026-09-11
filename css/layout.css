@@ -1,0 +1,193 @@
+/* denne CSS-side er primært til grid og flex */
+
+/* grid gør ikke noget, når det står for sig selv;
+det forbereder bare elementerne */
+
+/* -------------------------- */
+
+/* media query (som herunder) sørger for, at ændringerne kun sker i større formater -- bibeholder mobilsite størrelse 
+De kan alle samles under én @media */
+
+@media (width>=600px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-wrap: auto;
+  }
+
+  .grid_2-1 > p {
+    padding-top: 2rem;
+    padding-right: 1rem;
+  }
+  /* ______________________________ */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid_1-1 > div {
+    padding-left: 2rem;
+  }
+  /* ______________________________ */
+
+  .grid_5-3 {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    column-gap: 25px;
+    row-gap: 15px;
+  }
+  /* ____________________________ */
+
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 15px;
+  }
+  /* .grid_2-3 > div {
+    /* padding-left: 1rem;
+    padding-right: 1rem; } */
+
+  /* ____________________________ */
+
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 15px;
+  }
+  .grid_3-2 > div {
+    /* padding-right: 1rem; */
+    padding-left: 0.5rem;
+  }
+
+  /* ____________________________ */
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* ____________________________ */
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  /* ____________________________ */
+  .order {
+    order: -1;
+  }
+  /* værdien -1 rykker billedet op over de andre elementer i samme sektion, fordi den i HTML'en står nederst */
+
+  /* ____________________________ */
+
+  a {
+    word-break: break-all;
+  }
+
+  /* ____________________________ */
+
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* justify-content sørger for, at de tre billeder står på en lige række 
+    En anden måde at gøre det på, hvis man ikke opdeler i to elementer:
+    .flex_col > img:last-child { margin-top: auto; }*/
+  }
+  .flex_col > img {
+    padding: 0 1rem;
+  }
+  .flex_col > :first-child {
+    padding: 0 1rem;
+  }
+
+  /* .flex_img_3 {
+    min-height: 206px;
+    max-height: 324px;
+  } */
+
+  /* ---------------------- */
+
+  .galleri {
+    padding-top: 4.8rem;
+    font-size: 30px;
+  }
+  .galleri_tekst {
+    max-width: 65ch;
+  }
+
+  .computer-old {
+    padding-top: 0;
+  }
+
+  /* ----------------------- */
+
+  img {
+    min-width: 200px;
+    height: auto;
+    border-radius: 0;
+    padding: 0;
+  }
+  /* nu har ingen af billederne rundede hjørner længere
+Kan tilføjes til enkelte billeder i stedet */
+
+  /* ----------------------- */
+
+  .menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* margin */
+  }
+
+  .menu a:hover {
+    margin: 0;
+  }
+
+  /* ----------------------- */
+
+  .statistik {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  .statistik dt {
+    border: 1px solid rgb(2, 195, 140);
+    border-radius: 15px;
+    padding: 0.2rem;
+  }
+  .statistik dd {
+    padding-top: 0.5rem;
+    padding-bottom: 1.3rem;
+  }
+
+  /* ------------------------ */
+  .galleri_1 {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1 / span 2;
+  }
+
+  .galleri_2 {
+    display: grid;
+    grid-column: 3 / 4;
+  }
+
+  .galleri_3 {
+    display: grid;
+    grid-column: 4 / 5;
+  }
+  .galleri_4 {
+    display: grid;
+    grid-column: 1 / 2;
+  }
+
+  .galleri_5 {
+    display: grid;
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+  }
+
+  .galleri_6 {
+    display: grid;
+    grid-column: 2 / 5;
+  }
+}

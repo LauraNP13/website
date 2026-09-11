@@ -3,53 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- ^^ de to første meta tags kommer automatisk i skabelonen (!). 
+     Det sidste meta tag er godt at have med på studiet, men ikke når vi kommer ud i arbejde -->
     <title>Forside</title>
-    <link rel="stylesheet" href="css/styling.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul class="menu">
-          <li><a href="index.html" class="hjem">Hjem</a></li>
-          <li><a href="min_computer.html" class="min_computer">Min computer</a></li>
-          <li><a href="operativsystemer.html" class="operativsystemer">Operativsystemer</a></li>
-          <li><a href="komponenter.html" class="komponenter">Komponenter</a></li>
-          <li><a href="galleri.html" class="galleri">Galleri</a></li>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="min_computer.html">Min computer</a></li>
+          <li><a href="operativsystemer.html">Operativsystemer</a></li>
+          <li><a href="komponenter.html">Komponenter</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <h1><strong>Computere</strong></h1>
-      <p>
-        Et site om computeren med alt fra dens historie til dens specifikationer og mine personlige
-        præferencer, når det gælder computere og computerudstyr.
-      </p>
-      <img src="billeder/imgs/computer-old.webp" alt="" class="computer-old" />
-      <!-- **indsæt billedbeskrivelse** -->
 
-      <h2><em>Stats</em></h2>
-      <p>
-        Ni ud af ti familier ejer i 2022 en eller flere smartphones, mens knap seks ud af ti
-        familier har en tablet-pc liggende. Hele 94 procent ejer en personlig computer, hvoraf fire
-        ud af ti anvender Windows som deres primære operativsystem.
-      </p>
-      <!-- description list = data, statistik osv -->
-      <dl class="statistik">
-        <dt>Personlig computer</dt>
-        <dd>94%</dd>
-        <dt>Windows</dt>
-        <dd>40%</dd>
-        <dt>Tablet</dt>
-        <dd>56%</dd>
-        <dt>Smartphone</dt>
-        <dd>93%</dd>
-      </dl>
+      <section class="grid_2-1">
+        <p>
+          Et site om computeren med alt fra dens historie til dens specifikationer og mine
+          personlige præferencer, når det gælder computere og computerudstyr.
+        </p>
 
-      <img
-        src="billeder/imgs/mac.webp"
-        alt="Lille hund med briller på kigger på en iPad, som står på et bord"
-      />
+        <img class="computer-old" src="/billeder/imgs/computer-old.webp" alt="" />
+      </section>
+
+      <!-- ^^ øverst: .grid_2-1 -->
+
+      <!-- vv nederst: .grid_1-1 -->
+
+      <section class="grid_1-1">
+        <!-- primær div -->
+        <div>
+          <h2><em>Stats</em></h2>
+          <p>
+            Ni ud af ti familier ejer i 2022 en eller flere smartphones, mens knap seks ud af ti
+            familier har en tablet-pc liggende. Hele 94 procent ejer en personlig computer, hvoraf
+            fire ud af ti anvender Windows som deres primære operativsystem.
+          </p>
+
+          <!-- description list = data, statistik osv -->
+
+          <dl class="statistik grid_1-1">
+            <div>
+              <dt>Personlig computer</dt>
+              <dd>94%</dd>
+            </div>
+            <!-- div 1 -->
+            <div>
+              <dt>Windows</dt>
+              <dd>40%</dd>
+            </div>
+            <!-- div 2 -->
+            <div>
+              <dt>Tablet</dt>
+              <dd>56%</dd>
+            </div>
+            <!-- div 3 -->
+            <div>
+              <dt>Smartphone</dt>
+              <dd>93%</dd>
+            </div>
+            <!-- div 4 -->
+          </dl>
+        </div>
+        <!-- primær div -->
+
+        <img
+          class="order"
+          src="/billeder/imgs/mac.webp"
+          alt="Lille hund med briller på kigger på en iPad, som står på et bord"
+        />
+        <!-- brug af order-klassen: værdien i CSS styrer rækkefølgen -->
+      </section>
     </main>
 
     <hr />
