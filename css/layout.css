@@ -20,6 +20,7 @@ De kan alle samles under én @media */
     padding-right: 1rem;
   }
   /* ______________________________ */
+
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -33,8 +34,7 @@ De kan alle samles under én @media */
   .grid_5-3 {
     display: grid;
     grid-template-columns: 5fr 3fr;
-    column-gap: 25px;
-    row-gap: 15px;
+    gap: 40px;
   }
   /* ____________________________ */
 
@@ -43,23 +43,19 @@ De kan alle samles under én @media */
     grid-template-columns: 2fr 3fr;
     column-gap: 15px;
   }
-  /* .grid_2-3 > div {
-    /* padding-left: 1rem;
-    padding-right: 1rem; } */
 
   /* ____________________________ */
 
   .grid_3-2 {
     display: grid;
     grid-template-columns: 3fr 2fr;
+    column-gap: 15px;
     gap: 15px;
-  }
-  .grid_3-2 > div {
-    /* padding-right: 1rem; */
-    padding-left: 0.5rem;
+    padding-top: 2rem;
   }
 
   /* ____________________________ */
+
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -70,6 +66,7 @@ De kan alle samles under én @media */
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   /* ____________________________ */
+
   .order {
     order: -1;
   }
@@ -79,6 +76,14 @@ De kan alle samles under én @media */
 
   a {
     word-break: break-all;
+  }
+
+  .mac_windows {
+    padding-top: 0;
+  }
+
+  .tablets {
+    padding-top: 20px;
   }
 
   /* ____________________________ */
@@ -107,10 +112,13 @@ De kan alle samles under én @media */
   /* ---------------------- */
 
   .galleri {
-    padding-top: 4.8rem;
+    padding-top: 3rem;
     font-size: 30px;
   }
-  .galleri_tekst {
+
+  .galleri_div {
+    margin-bottom: 2rem;
+    margin-top: -20px;
     max-width: 65ch;
   }
 
@@ -147,6 +155,8 @@ Er tilføjet til enkelte billeder i stedet vv */
     margin: 0;
     padding: 0 0.5rem;
   }
+
+  /* ----------------------- */
 
   /* ----------------------- */
 
