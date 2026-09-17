@@ -127,7 +127,11 @@ De kan alle samles under én @media */
     padding: 0;
   }
   /* nu har ingen af billederne rundede hjørner længere
-Kan tilføjes til enkelte billeder i stedet */
+Er tilføjet til enkelte billeder i stedet vv */
+
+  .rounded {
+    border-radius: 35px 10px;
+  }
 
   /* ----------------------- */
 
@@ -137,11 +141,11 @@ Kan tilføjes til enkelte billeder i stedet */
     padding: 0;
     justify-content: space-evenly;
     flex-direction: row;
-    /* margin */
   }
 
   .menu a:hover {
     margin: 0;
+    padding: 0 0.5rem;
   }
 
   /* ----------------------- */
@@ -161,6 +165,7 @@ Kan tilføjes til enkelte billeder i stedet */
   }
 
   /* ------------------------ */
+
   .galleri_1 {
     display: grid;
     grid-column: 1 / 3;
